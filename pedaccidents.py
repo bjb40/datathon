@@ -16,6 +16,7 @@ shapefile = shapefile.Reader(shp=shp, dbf=dbf)
 
 records = shapefile.records()
 fields = shapefile.fields
+shapes = shapefile.shapes()
 
 #available fields
 print fields
