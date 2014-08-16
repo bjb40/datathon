@@ -21,6 +21,11 @@ shapes = shapefile.shapes()
 #available fields
 print fields
 
+#availalbe "shapes"
+for name in dir(shapes):
+    if not name.startswith("__"):
+        name
+
 #total records
 print("\nTotal incidents: "+ str(len(records))+"\n")
 
